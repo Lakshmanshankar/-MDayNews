@@ -14,7 +14,7 @@ export default class Prduct extends Component {
     CheckUpdate(){
         
         var content=[]
-        var n="https://newsapi.org/v2/everything?q=tesla&from=2022-04-22&sortBy=publishedAt&language=en&apiKey=5830d0054f6e4b92b7b6507a14a6505f"
+        var n="https://newsapi.org/v2/everything?q=tesla&from=2022-04-22&sortBy=publishedAt&language=en&apiKey={YOUR_API_KEY}"
         var fet=fetch(n).then((res)=>res.json()).then((data)=>{
           console.log(data)
            for(var i=0;i<10;i++){

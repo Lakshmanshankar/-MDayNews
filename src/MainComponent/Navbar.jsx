@@ -18,8 +18,9 @@ export default class Navbar extends Component {
           <div className="MainContent" id='Home'>
             <div className="CompanyAnim">MDayNews</div>
             <div className="Conatiner">
-              We are offering solutions for all levels of organisations and ata any level of tech stack
-            </div>
+              We offer real time News given by News
+Api were you can customise the News according to your preferences
+    </div>
             <div className="TwoStandard"><button className='ReadMore'>Read More</button>
             <button className='Signin'>Contact us</button>
             </div>

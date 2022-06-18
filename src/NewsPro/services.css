@@ -1,0 +1,152 @@
+#Services{
+    width: 100vw;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+.ContainersErvice{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px rgb(222, 217, 217);
+    position: relative;
+    
+}
+.ContainersErviceAnim{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 252, 252);
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px rgb(222, 217, 217);
+    position: relative;
+    animation:riseIng 1.5s ease;
+}
+@keyframes riseIng{
+    0%{
+        transition: 0.75s;
+        opacity: 0;
+        transform: translateX(200px);
+    }
+}
+.HeadingForServices{
+    position: absolute;
+    top: 4%;
+    font-size: 5pc;
+    font-weight: 900;
+    background: linear-gradient(120deg,rgb(245, 18, 211),rgb(8, 172, 194));
+
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: azure;
+}
+#ServiceCardOne{
+    background: linear-gradient(120deg,rgb(0, 251, 255),rgb(23, 232, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#ServiceCardTwo{
+    background: linear-gradient(120deg,rgb(87, 235, 24),rgb(0, 165, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#ServiceCardThree{
+    background: linear-gradient(120deg,rgb(255, 0, 123),rgb(207, 174, 9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
+}
+#ServiceCardFour{
+    background: linear-gradient(120deg,rgb(142, 25, 189),rgb(177, 174, 160));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
+}
+.DescriptionForServices{
+    width: 30vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 19px;
+    font-family: var(--LogoFont);
+}
+.ImageContainer{
+    width: 40vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#ImageContainerOne{
+    background-size:contain;
+    background-position: center;
+    background: url('../Folder/Deadline-pana.svg');
+}
+#ImageContainerTwo{
+      background:url('../Folder/Money\ income-bro.svg');
+    background-size:contain;
+    background-position: center;
+}
+#ImageContainerThree{
+    width: 40vw;
+    height: 60vh;
+    background:url('../Folder/LogoBack.svg');
+    background-size:cover;
+    background-position: center;
+}
+#ImageContainerFour{
+    width: 40vw;
+    height: 60vh;
+    background:url('../Folder/Web_SVG.svg');
+    background-size:cover;
+    background-position: center;
+}
+@media screen and (max-width:878px) {
+    #Services{
+        height: 400vh;
+    }
+    .ContainersErvice{
+        width: 90vw;
+        background: rgb(255, 255, 255);
+        position: relative;
+    }
+    .ContainersErviceAnim{
+       padding-bottom:calc(10%);
+        height:10%;
+    }
+    .HeadingForServices{
+        font-size: 30px;
+    }
+    .DescriptionForServices{
+        position: absolute;
+        width: 75vw;
+        height: 20vh;
+        font-size: 13px;
+        padding-bottom: 20px;
+        top: 20%;
+        padding-top: 10px;
+        text-align: center;
+    }
+    #ImageContainerOne{
+        display: none;
+    }
+    #ImageContainerTwo{
+        display: none;
+    }
+    #ImageContainerThree{
+        display: none;
+    }
+    #ImageContainerFour{
+        display: none;
+    }
+}

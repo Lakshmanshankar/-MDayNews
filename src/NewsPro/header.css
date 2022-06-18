@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+:root{
+    --Header:'Tiro Devanagari Marathi', serif;
+    --LogoFont:'Roboto', sans-serif;
+    --Buttons: 'Roboto Mono', monospace;
+    --FreeCode:'Roboto Mono', monospace;
+}
+.TotalHead{
+    height: 10vh;
+    background: black;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background: rgb(0, 0, 0);
+}
+.logo{
+    width: 200px;
+    margin-left: 10px;
+    font-size: 25px;
+    height: 6vh;
+    font-weight: 900;
+    margin-top:15px;
+    background:linear-gradient(120deg,white,rgb(235, 69, 133),rgb(217, 14, 92));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: rgb(224, 24, 104);
+}
+.nav-bar{
+    margin-top: 1px;
+    margin-left: 1%;
+    width: 60vw;
+    height: 9vh;
+    display: flex;
+    background: rgba(255, 66, 148,0.04);
+    box-shadow: 1.2px 1.25px 10px rgba(239, 31, 173, 0.96);
+    border: 0;
+    border-radius: 10px;
+    align-items: center;
+}
+.Navbar{
+    margin-left: 5%;
+    width: 60vw;
+    height: 9vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Options{
+    margin-top: 14px;
+    display: inline-block;
+}
+.OptionI{
+    transition: 0.3s;
+    width: 200px;
+    height: 20px;
+    margin: 20px;
+    padding: 6px;
+    text-decoration: wavy;
+    font-size: 15px;
+    color: aliceblue;
+    font-family: var(--Buttons);
+    border: 0px solid rgb(0, 0, 0);
+}
+.OptionI:hover{
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    border-bottom-width: 2px;
+    background: rgba(106, 10, 77, 0.3);
+    box-shadow: 1.2px 1.2px 3.7px rgba(255, 80, 202, 0.63),-1.2px -1px 3px rgba(248, 69, 155, 0.63);
+    animation: colors 1s ease-in;
+}
+@keyframes colors{
+
+    0%{      
+        transition: .1s;    
+        box-shadow: 1.2px 1.3px 30px rgba(234, 40, 124, 0.85);
+    } 
+}
+.HomeBtn{
+    display: none;
+    position: absolute;
+    top: 2.7%;
+    right: 4%;
+    background:black;
+    color: aliceblue;
+}
+@media screen and (max-width:870px){
+    .TotalHead{
+        height: 60vh;
+        background: black;
+    }
+    .header{
+        background: black;
+    }
+    .logo{
+    position: absolute;
+    top: -2%;
+    left: 10%;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+    .HomeButton{
+        background: black;
+        border: 0;
+        color: aliceblue;
+    }
+    .HomeBtn{
+        position: absolute;
+        margin: 10px;
+        display: block;
+        color: aliceblue;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 11%;
+        left: -1%;
+        width: 100vw;
+        height:10vh;
+        border-radius: 0px;
+        background: black;
+    }
+    .Navbar{
+        position: absolute;
+        display: none;
+        width:150px;
+        top:1%;
+        left: -13%;
+        flex-direction: row;
+        transition: 1s;
+    }
+}

@@ -1,0 +1,14 @@
+#Product{
+    position: absolute;
+    top: 450%;
+}
+#AboutUs{
+    position: absolute;
+    top: 1650%;
+}
+@media screen  and (max-width:878px){
+    .ContainerServicesPlate{
+        position:absolute;
+        top: 200%;
+    }
+}

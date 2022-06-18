@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+:root{
+    --AboutMe:'Roboto Slab', serif;
+    --CurvedFont:'PT Sans', sans-serif;
+}
+
+#AboutUs{
+width: 100vw;
+height: 100vh;
+background:linear-gradient(12deg,rgba(213, 36, 95, 0.85),rgba(0, 212, 173, 0.9)),url("../Folder/AboutUs.jpg");
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.ContainerForAbout{
+    width: 20vw;
+    height: 50vh;
+    margin-left: 10%;
+    position: absolute;
+    top: 7%;
+    background: rgba(248, 246, 241, 0.28);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+.NameContainer{
+    margin-top: 10%;
+    margin-left: 10px;
+    font-family: var(--AboutMe);
+    font-size: 20px;
+    color: rgb(249, 253, 252);
+    -webkit-text-stroke: 0.2px;
+    font-weight: 100;
+}
+.AboutMe{
+    margin-top: 10%;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ContactForm{
+    width: 30vw;
+    height: 60vh;
+    margin-left:35%;
+    position: absolute;
+    top: 7%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(5px);
+    flex-direction: row;
+    align-items: flex-start;
+    border: 0ch;
+    border-radius: 10px;
+}
+.HeaderForFeedback{
+    margin-left: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: var(--AboutMe);
+}
+.TextInput{
+    margin-left: 10%;
+    padding-top: 2%;margin-bottom: 10px;
+    width: 25vw;
+    background: rgba(255, 255, 255, 0.4);
+    border: 0;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.InputComments{
+    width: 25vw;
+    margin-top: 1%;
+    margin-left: 10%;
+    background: rgba(255, 255, 255, 0.4);
+    color: aliceblue;
+    border: 0;
+    border-radius: 3px;
+    font-family: var(--AboutMe);
+}
+.TextInput:hover,.InputComments:hover{
+    transition: 0.5S;
+    color: aliceblue;
+    border: 0.2px solid white;
+    background: rgba(205, 235, 37, 0.04);
+}
+.OnSubmitHandleButton{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 25vw;
+    height: 6vh;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgba(205, 41, 166, 0.3);
+    font-size: 20px;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+}
+.OnSubmitHandleButton:hover{
+    transition: 0.5s;
+    background-color: rgba(239, 76, 128, 0.9);
+}
+.ContentForAboutUs{
+    width: max-content;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 15px;
+    padding-bottom: 15px;
+    color: aliceblue;
+}
+.downLoadable{
+    position: relative;
+    left: 68%;
+    top: -3%;
+    display: flex;
+    flex-direction:column;
+    width: 30vw;
+    height: 5vh;
+}
+.LinkFollowThree{
+    margin-left: 2vw;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 2%;
+    width: 20vw;
+    text-align: center;
+    background: rgba(0, 228, 213, 0.37);
+    font-size: 20px;
+    font-weight: 900;
+    color: aliceblue;
+    border: 0;
+    border-radius: 4px;
+}
+.LinkFollowOne{
+    margin-left: 2vw;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 2%;
+    width: 20vw;
+    text-align: center;
+    background: rgba(255, 255, 255,0.37);
+    font-size: 20px;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+    border: 0;
+    border-radius: 4px;
+}
+.LinkFollowTwo{
+    margin-top: 10px;
+    margin-left: 2vw;
+    text-decoration: none;
+    padding: 2%;
+    width: 20vw;
+    text-align: center;
+    background: rgba(255, 255, 255,0.37);
+    font-size: 20px;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+    border: 0;
+    border-radius: 4px;
+}
+.LinkFollowOne:hover{
+    transition: 0.4s;
+    background-color: rgba(48, 3, 31, 0.6);
+  
+    }
+.LinkFollowTwo:hover{
+transition: 0.4s;
+background-color: rgba(19, 140, 216,0.6);
+}
+.ThankYouText{
+    width: 100vw;
+    margin-top:35%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2%;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+    border: 0px solid white;
+    border-top-width: 1px;
+    border-top-color: rgb(245, 250, 255);
+}
+@media screen and (max-width:878px) {
+#AboutUs{
+    position: absolute;
+    top: 550%;
+    height: 150vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+.ContainerForAbout{
+    width: 95vw;
+    right: 2%;
+}
+.ContactForm{
+    position: absolute;
+    width: 95vw;
+    right: 2%;
+    top: 60%;
+}
+.TextInput{
+    width: 70vw;
+    height: 4vh;
+   margin-right: 10%;
+}
+.InputComments{
+    width: 70vw;
+    right: 2%;
+}
+.ContentForAboutUs{
+    width: calc(max-content+100px);
+}
+.LinkFollowThree{
+    display: none;
+}
+.downLoadable{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    top: 45%;
+    left: -0%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.LinkFollowOne{
+    margin-left: 2vw;
+    text-decoration: none;
+    padding: 2%;
+    width: 120px;
+    text-align: center;
+    background: rgba(255, 255, 255,0.37);
+    font-size: 20px;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+    border: 0;
+    border-radius: 4px;
+}
+.LinkFollowTwo{
+    margin-left: 2vw;
+    text-decoration: none;
+    padding: 2%;
+    width: 120px;
+    text-align: center;
+    background: rgba(255, 255, 255,0.37);
+    font-size: 20px;
+    font-family: var(--LogoFont);
+    color: aliceblue;
+    border: 0;
+    border-radius: 4px;
+}
+.LinkFollowOne:hover{
+    transition: 0.4s;
+    background-color: rgba(217, 12, 138, 0.6);
+    }
+    .LinkFollowTwo:hover{
+    transition: 0.4s;
+    background-color: rgba(19, 140, 216,0.6);
+}
+
+}
